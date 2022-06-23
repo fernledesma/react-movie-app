@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import LandingPage from "./features/MovieSearch/pages/LandingPage";
+import LandingPage from "./features/MovieSearch/pages/LandingPage.jsx";
 import { MoviesProvider } from "./features/Providers/MoviesProvider";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import FavoritesPage from './features/FavoriteMovies/pages/FavoritesPage';

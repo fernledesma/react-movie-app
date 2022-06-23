@@ -38,7 +38,7 @@ const MovieDetails = ({ Title, Year, imdbID, Type, Poster, Plot, Actors }, favor
         <p>Plot: {Plot}</p>
         <p>Actors: {Actors}</p>
         <button 
-          onClick={() => addMovieWithCheck({ Title, Year, Actors })}
+          onClick={() => addMovieWithCheck({ Poster, Title, Year, Actors })}
         >Add to favorites</button>
       </Content>
     </Container>

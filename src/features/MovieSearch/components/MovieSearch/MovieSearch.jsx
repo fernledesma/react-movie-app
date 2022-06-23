@@ -3,20 +3,22 @@ import styled from 'styled-components';
 import axios from 'axios';
 
 const SubmitButton = styled.button`
-  background-color: dodgerblue;
+  background-color: #556b2f;
   border: none;
   color: white;
   padding: 10px;
   border-radius: 12px;
 
+
+
   &:hover {
-    background-color: #054cda;
+    background-color: #556b2f;
   }
 `
 
 const MovieSearch = ({ setMovie }) => {
   const [movieName, setMovieName] = useState("");
-  const apiKey = process.env.REACT_APP_API_KEY;
+  const apiKey = "d6fc1ec7";
 
   const getMoviesByName = async (name) => {
     const url = `http://www.omdbapi.com/?apikey=${apiKey}&t=${name}`;
@@ -34,7 +36,7 @@ const MovieSearch = ({ setMovie }) => {
       <form>
         <input
           type="text"
-          placeholder="Movie Name"
+          placeholder="Magical Mystery Movie Name"
           value={movieName}
           onChange={(e) => setMovieName(e.currentTarget.value)}
         />

@@ -8,9 +8,9 @@ const Container = styled.div`
   text-align: center;
 
   input {
-    background: #ababab;
+    background: coral;
     border: none;
-    border-radius: 2px;
+    border-color: coral;
     padding: 10px;
     color: white;
     font-weight: bolder;
@@ -22,7 +22,7 @@ const LandingPage = () => {
 
   return (
     <Container>
-      <h1>Welcome to my movie app!</h1>
+      <h1>Help! I need some movies. Help!</h1>
       <MovieSearch setMovie={setMovie} />
       <div>
         {movie && <MovieCard movieData={movie} />}

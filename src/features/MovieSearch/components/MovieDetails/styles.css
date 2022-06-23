@@ -1,5 +1,13 @@
 .details-container {
+    background-color: coral;
     display: flex;
     gap: 2rem;
     justify-content: center;
+}
+.details-container button{
+  background-color: #556b2f;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
 }
